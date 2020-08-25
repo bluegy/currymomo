@@ -1,0 +1,116 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 800px;
+  background-color: #EEE9D3;
+  border: blue 100px dotted;
+}
+
+body {
+  background-color: #FFF74E;
+  background: linear-gradient(-60deg, #FFF74E 25%, #f4e2de 25%, #f4e2de 50%, #FFF74E 50%, #FFF74E 75%, #f4e2de 75%, #f4e2de);
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 30px auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#05FBFF), to(#1E00FF));
+  background: linear-gradient(#05FBFF, #1E00FF);
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin-left: 50px;
+  padding: 10px;
+  background-color: #FFFDFF;
+  border: #EAB75C thick ridge;
+}
+
+#main-content {
+  margin: 40px auto;
+}
+
+h1 {
+  background-color: #FFF74E;
+  font-size: 50px;
+  font-style: italic;
+  text-shadow: -4px 3px 0 FFF74E, -8px 6px 0 gainsboro;
+  text-align: center;
+  padding: 10px;
+  border-top: 6px double #000;
+  border-bottom: 6px double #000;
+}
+
+h1 span {
+  color: red;
+}
+
+.main-img img {
+  text-align: center;
+}
+
+#news {
+  margin-top: 30px;
+}
+
+#news h2 {
+  border-bottom: solid 1px;
+}
+
+#access {
+  margin-top: 30px;
+}
+
+#access h2 {
+  border-bottom: solid 1px;
+}
+
+#access iframe {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#footer {
+  text-align: center;
+  background-color: orange;
+}
+/*# sourceMappingURL=common.css.map */
