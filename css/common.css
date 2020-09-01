@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "M PLUS Rounded 1c" ,sans-serif;
   color: black;
 }
 
@@ -20,30 +20,20 @@ ul {
   list-style: none;
 }
 
-.wrapper {
-  max-width: 800px;
-  background-color: #EEE9D3;
-  border: blue 100px dotted;
+body {
+  border: blue 50px dotted;
+  background: repeating-linear-gradient(-20deg, #e3e6cf 0, #e3e6cf 90px, #f7f4ba 90px, #f7f4ba 95px, #fcf453 95px, #fcf453 105px);
 }
 
-body {
-  background-color: #FFF74E;
-  background: linear-gradient(-60deg, #FFF74E 25%, #f4e2de 25%, #f4e2de 50%, #FFF74E 50%, #FFF74E 75%, #f4e2de 75%, #f4e2de);
+#header-and-main-wrapper {
+  border-right: lightcoral 30px dotted;
+  border-left: red 50px solid;
 }
 
 #header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin: 30px auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(#05FBFF), to(#1E00FF));
-  background: linear-gradient(#05FBFF, #1E00FF);
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 30px;
 }
 
 .nav-menu {
@@ -55,36 +45,87 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin: 0;
+  padding: 10px 0;
 }
 
 .nav-menu li {
-  margin-left: 50px;
+  padding: 15px;
+}
+
+.nav-menu .menu-list {
+  color: brown;
+  background-color: #f7faff;
+  border: 10px inherit solid;
+  border-radius: 20px / 20px;
+}
+
+.logo-wrapper {
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding: 10px;
-  background-color: #FFFDFF;
-  border: #EAB75C thick ridge;
+  border: 0.5px #f7faff dotted;
+  border-radius: 20px / 20px;
+}
+
+.logo-wrapper img {
+  border: 1px #fcf453 solid;
+  border-radius: 20px / 20px;
+}
+
+.shop-info {
+  text-align: left;
+  height: 160px;
+  padding-right: 0px;
+}
+
+.shop-info h1 {
+  font-size: 40px;
+  font-style: italic;
+  padding-top: 40px;
+  padding-right: 80px;
+}
+
+.shop-info h1 span {
+  background-color: #FFF74E;
+  font-size: 80px;
+  font-weight: bold;
+  text-shadow: -4px 3px 0 white, -8px 6px 0 gainsboro;
+  color: red;
+  padding: 0 10px 10px 0px;
+  border: 1px #fcf453 solid;
+  border-radius: 20px / 20px;
+}
+
+.shop-copy {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: serif;
+  text-align: center;
+  padding: 20px;
 }
 
 #main-content {
-  margin: 40px auto;
+  margin: 10px auto 0px auto;
 }
 
-h1 {
-  background-color: #FFF74E;
-  font-size: 50px;
-  font-style: italic;
-  text-shadow: -4px 3px 0 FFF74E, -8px 6px 0 gainsboro;
-  text-align: center;
-  padding: 10px;
-  border-top: 6px double #000;
-  border-bottom: 6px double #000;
+.main-content-wrapper {
+  max-width: 1000px;
+  background-color: #e3e6cf;
+  padding: 0px 20px;
+  border-right: 20px groove orange;
 }
 
-h1 span {
-  color: red;
-}
-
-.main-img img {
+#main-img img {
+  border: 1px inherit solid;
+  border-radius: 100px / 100px;
   text-align: center;
 }
 
@@ -93,7 +134,18 @@ h1 span {
 }
 
 #news h2 {
+  font-size: 35px;
+  padding-bottom: 2px;
   border-bottom: solid 1px;
+}
+
+#news ul {
+  padding: 10px;
+}
+
+#news ul li {
+  font-size: 20px;
+  line-height: 30px;
 }
 
 #access {
@@ -101,16 +153,28 @@ h1 span {
 }
 
 #access h2 {
+  font-size: 35px;
+  padding-bottom: 2px;
   border-bottom: solid 1px;
 }
 
 #access iframe {
-  margin: 0 auto;
   text-align: center;
+  padding: 10px;
 }
 
 #footer {
-  text-align: center;
   background-color: orange;
+  padding: 15px 10px;
+}
+
+#footer small {
+  font-size: 30px;
+}
+
+#footer address {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 10px;
 }
 /*# sourceMappingURL=common.css.map */
