@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" type="text/css" href="./css/reset.css">
-  <!-- リセットCSS -->
   <link rel="stylesheet" href="./css/common.css">
-  <!-- スタイルシート -->
+
+  <link rel="stylesheet" type="text/css" href="./css/slick.css">
+  <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
 
   <title>カレーやmomo</title>
@@ -42,11 +44,23 @@
 
     <main id="main-content" class="main-content-wrapper">
       <section id="main-img">
-        <img src="./image/chickencurry.jpg" alt="カレーやmomo・チキンカレー">
+        <!-- <img src="./image/chickencurry.jpg" alt="カレーやmomo・チキンカレー"> -->
+        <ul class="slider">
+          <li>
+            <img src="./image/chickencurry.jpg" alt="">
+          </li>
+          <li>
+            <img src="./image/event2.JPG" alt="">
+          </li>
+          <li>
+            <img src="./image/event1.JPG" alt="">
+          </li>
+        </ul>
       </section>
       <!-- トップ写真 -->
       
-      <section id="slider"></section>
+      <section id="slideshow">
+      </section>
       <!-- スライドショー -->
       
       <section id="news">
@@ -80,5 +94,17 @@
     <!-- 住所・連絡先・電話・営業時間 -->
     
   </footer>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script>
+    $('.slider').slick({
+    autoplay:true,
+    autoplaySpeed:3000,
+    speed:1000,
+    // dots:true,
+    });
+  </script>
+
 </body>
 </html>

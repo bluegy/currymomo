@@ -22,12 +22,12 @@ ul {
 
 body {
   border: blue 50px dotted;
-  background: repeating-linear-gradient(-20deg, #e3e6cf 0, #e3e6cf 90px, #f7f4ba 90px, #f7f4ba 95px, #fcf453 95px, #fcf453 105px);
+  background: repeating-linear-gradient(-20deg, #e3e6cf 0, #e3e6cf 90px, #f7faff 90px, #f7faff 95px, #faf25779 95px, #faf25779 105px);
 }
 
 #header-and-main-wrapper {
   border-right: lightcoral 30px dotted;
-  border-left: red 50px solid;
+  border-left: red 30px solid;
 }
 
 #header {
@@ -57,7 +57,7 @@ body {
   color: brown;
   background-color: #f7faff;
   border: 10px inherit solid;
-  border-radius: 20px / 20px;
+  border-radius: 50px / 50px;
 }
 
 #header .logo-wrapper {
@@ -124,10 +124,14 @@ body {
   border-right: 20px groove orange;
 }
 
-#main-content #main-img img {
-  border: 1px inherit solid;
-  border-radius: 100px / 100px;
-  text-align: center;
+#main-content #main-img {
+  margin-top: 25px;
+}
+
+#main-content #main-img .slider li img {
+  height: 800px;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 #main-content #news {

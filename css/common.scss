@@ -27,13 +27,13 @@ ul {
 body {
     border: blue 50px dotted;
     background: repeating-linear-gradient(
-        -20deg,#e3e6cf 0,#e3e6cf 90px,#f7f4ba 90px, #f7f4ba 95px,
-        #fcf453 95px, #fcf453 105px,
+        -20deg,#e3e6cf 0,#e3e6cf 90px,#f7faff 90px, #f7faff 95px,
+        #faf25779 95px, #faf25779 105px,
     );
 }
 #header-and-main-wrapper {
     border-right: lightcoral 30px dotted;
-    border-left: red 50px solid;
+    border-left: red 30px solid;
 }
 
 // header
@@ -56,7 +56,7 @@ body {
             background-color: #f7faff;
             // background: linear-gradient(#f2f5ff, brown);
             border: 10px inherit solid;
-            border-radius: 20px / 20px;
+            border-radius: 50px / 50px;
         }
     }
     .logo-wrapper {
@@ -129,15 +129,20 @@ body {
     }
     
     // image
-    #main-img img { 
-        border: 1px inherit solid;
-        border-radius: 100px / 100px;
-        text-align: center;
-        // background-color: darkolivegreen;
+    #main-img {
+        margin-top: 25px;
+
+        .slider li img { 
+            // border: 1px inherit solid;
+            // border-radius: 5%;
+            height: 800px;
+            width: 1000px;
+            margin: 0 auto;
+        }
     }
 
     // slider
-    // #slider {}
+    // #slideshow {}
 
     // News
     #news {
