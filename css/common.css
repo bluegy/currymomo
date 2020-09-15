@@ -9,6 +9,8 @@ body {
 
 a {
   text-decoration: none;
+  display: block;
+  color: inherit;
 }
 
 img {
@@ -21,13 +23,26 @@ ul {
 }
 
 body {
-  border: blue 50px dotted;
-  background: repeating-linear-gradient(-20deg, #e3e6cf 0, #e3e6cf 90px, #f7faff 90px, #f7faff 95px, #faf25779 95px, #faf25779 105px);
+  border: blue 47px dotted;
+  background: repeating-linear-gradient(-42deg, #f9ffd9 0, #f9ffd9 200px, #ffe2fd 290px, #ffe2fd 302px);
+}
+
+@media (max-width: 600px) {
+  body {
+    border: blue 20px dotted;
+  }
 }
 
 #header-and-main-wrapper {
   border-right: lightcoral 30px dotted;
   border-left: red 30px solid;
+}
+
+@media (max-width: 600px) {
+  #header-and-main-wrapper {
+    border-right: lightcoral 8px dotted;
+    border-left: red 10px solid;
+  }
 }
 
 #header {
@@ -45,7 +60,14 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 10px 0;
+}
+
+@media (max-width: 600px) {
+  #header .nav-menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 #header .nav-menu li {
@@ -53,15 +75,27 @@ body {
   padding: 15px;
 }
 
-#header .nav-menu .menu-list {
+@media (max-width: 600px) {
+  #header .nav-menu li {
+    padding: 5px;
+  }
+}
+
+#header .nav-menu .menu-button {
+  font-size: 20px;
   color: brown;
   background-color: #f7faff;
   border: 10px inherit solid;
   border-radius: 50px / 50px;
 }
 
+@media (max-width: 600px) {
+  #header .nav-menu .menu-button {
+    font-size: 15px;
+  }
+}
+
 #header .logo-wrapper {
-  background: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,46 +105,66 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 10px;
-  border: 0.5px #f7faff dotted;
-  border-radius: 20px / 20px;
+  padding: 30px 10px 30px 10px;
 }
 
-#header .logo-wrapper img {
-  border: 1px #fcf453 solid;
-  border-radius: 20px / 20px;
+@media (max-width: 600px) {
+  #header .logo-wrapper {
+    padding: 10px;
+  }
 }
 
-#header .shop-info {
-  text-align: left;
-  height: 160px;
-  padding-right: 0px;
-}
-
-#header .shop-info h1 {
+#header .logo-wrapper .shop-info h1 {
   font-size: 40px;
   font-style: italic;
+  letter-spacing: 5px;
   padding-top: 40px;
-  padding-right: 80px;
+  padding-right: 40px;
 }
 
-#header .shop-info h1 span {
-  background-color: #FFF74E;
+@media (max-width: 600px) {
+  #header .logo-wrapper .shop-info h1 {
+    font-size: 20px;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+#header .logo-wrapper .shop-info h1 span {
   font-size: 80px;
   font-weight: bold;
   text-shadow: -4px 3px 0 white, -8px 6px 0 gainsboro;
   color: red;
   padding: 0 10px 10px 0px;
-  border: 1px #fcf453 solid;
+}
+
+@media (max-width: 600px) {
+  #header .logo-wrapper .shop-info h1 span {
+    font-size: 45px;
+    padding: 0;
+  }
+}
+
+#header .logo-wrapper img {
+  width: 100px;
+  height: 100px;
+  border: 1px transparent solid;
   border-radius: 20px / 20px;
 }
 
-#header .shop-copy {
+#header .title {
   font-size: 20px;
   font-weight: bold;
   font-family: serif;
   text-align: center;
-  padding: 20px;
+  padding: 10px 20px;
+}
+
+@media (max-width: 600px) {
+  #header .title {
+    padding: 10px;
+    font-size: 12px;
+  }
 }
 
 #main-content {
@@ -125,24 +179,46 @@ body {
 }
 
 #main-content #main-img {
-  margin-top: 25px;
+  margin: 30px 20px;
 }
 
 #main-content #main-img .slider li img {
-  height: 800px;
-  width: 1000px;
+  height: 400px;
+  width: 400px;
   margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-#main-content #news {
-  margin-top: 30px;
-  padding: 0 20px;
+@media (max-width: 600px) {
+  #main-content #main-img .slider li img {
+    height: 100px;
+    width: 100px;
+  }
 }
 
-#main-content #news h2 {
+#main-content #news, #main-content #access {
+  margin-top: 100px;
+  padding: 0 80px;
+}
+
+@media (max-width: 600px) {
+  #main-content #news, #main-content #access {
+    margin: 0 auto;
+    padding: 12px;
+  }
+}
+
+#main-content #news h2, #main-content #access h2 {
   font-size: 35px;
-  padding-bottom: 2px;
+  padding-bottom: 5px;
   border-bottom: solid 1px;
+}
+
+@media (max-width: 600px) {
+  #main-content #news h2, #main-content #access h2 {
+    font-size: 25px;
+  }
 }
 
 #main-content #news ul {
@@ -154,34 +230,110 @@ body {
   line-height: 30px;
 }
 
-#main-content #access {
-  margin-top: 30px;
-  padding: 0 20px;
-}
-
-#main-content #access h2 {
-  font-size: 35px;
-  padding-bottom: 2px;
-  border-bottom: solid 1px;
+@media (max-width: 600px) {
+  #main-content #news ul li {
+    font-size: 15px;
+    line-height: 15px;
+  }
 }
 
 #main-content #access iframe {
+  padding: 15px;
+  width: 1000px;
+  height: 600px;
+}
+
+@media (max-width: 600px) {
+  #main-content #access iframe {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+#main-content #menu-food, #main-content #menu-drink {
+  margin-top: 10px;
+  padding: 40px 80px 40px 80px;
   text-align: center;
-  padding: 30px;
+}
+
+@media (max-width: 600px) {
+  #main-content #menu-food, #main-content #menu-drink {
+    padding: 10px;
+  }
+}
+
+#main-content #menu-food h2, #main-content #menu-drink h2 {
+  font-size: 35px;
+  padding-bottom: 5px;
+  border-bottom: solid 1px;
+}
+
+@media (max-width: 600px) {
+  #main-content #menu-food h2, #main-content #menu-drink h2 {
+    font-size: 30px;
+  }
+}
+
+#main-content #menu-food .menu-list, #main-content #menu-drink .menu-list {
+  padding: 30px 0;
+}
+
+#main-content #menu-food .menu-list li, #main-content #menu-drink .menu-list li {
+  font-size: 25px;
+  color: black;
+  letter-spacing: 1.3px;
+  line-height: 40px;
+}
+
+@media (max-width: 600px) {
+  #main-content #menu-food .menu-list li, #main-content #menu-drink .menu-list li {
+    font-size: 15px;
+  }
+}
+
+#main-content #menu-food .menu-list span, #main-content #menu-food .menu-list .menu-option, #main-content #menu-drink .menu-list span, #main-content #menu-drink .menu-list .menu-option {
+  font-size: 21px;
+  color: #7a7575;
+}
+
+@media (max-width: 600px) {
+  #main-content #menu-food .menu-list span, #main-content #menu-food .menu-list .menu-option, #main-content #menu-drink .menu-list span, #main-content #menu-drink .menu-list .menu-option {
+    font-size: 12px;
+  }
 }
 
 #footer {
   background-color: orange;
-  padding: 15px 10px;
+  padding: 20px 20px;
+  border-top: 3px  #d6f528 solid;
+}
+
+@media (max-width: 600px) {
+  #footer {
+    padding: 10px;
+  }
 }
 
 #footer small {
   font-size: 30px;
 }
 
+@media (max-width: 600px) {
+  #footer small {
+    font-size: 20px;
+  }
+}
+
 #footer address {
   font-size: 20px;
   line-height: 30px;
   padding: 10px;
+}
+
+@media (max-width: 600px) {
+  #footer address {
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
 /*# sourceMappingURL=common.css.map */
