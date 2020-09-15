@@ -237,14 +237,24 @@ body {
   }
 }
 
-#main-content #access iframe {
-  padding: 15px;
+#main-content .googlemap {
+  padding: 50px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  #main-content .googlemap {
+    padding: 10px;
+  }
+}
+
+#main-content .googlemap iframe {
   width: 1000px;
   height: 600px;
 }
 
 @media (max-width: 600px) {
-  #main-content #access iframe {
+  #main-content .googlemap iframe {
     width: 250px;
     height: 200px;
   }

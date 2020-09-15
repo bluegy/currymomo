@@ -208,16 +208,22 @@ body {
             }
         }
     // Access
-    #access iframe {
-        padding: 15px;
-        width: 1000px;
-        height: 600px;
+    .googlemap {
+        padding: 50px;
+        text-align: center;
         @media (max-width: 600px) {
-            width: 250px;
-            height: 200px;
+            padding: 10px;
         }
 
+        iframe {
+            width: 1000px;
+            height: 600px;
+            @media (max-width: 600px) {
+                width: 250px;
+                height: 200px;
+            }
         }
+    }
     
     // menu
     #menu-food, #menu-drink {
