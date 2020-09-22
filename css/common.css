@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "M PLUS Rounded 1c" ,sans-serif;
+  font-family: serif;
   color: black;
 }
 
@@ -23,32 +23,37 @@ ul {
 }
 
 body {
-  border: blue 47px dotted;
+  border-left: blue 47px dotted;
+  border-right: blue 47px dotted;
   background: repeating-linear-gradient(-42deg, #f9ffd9 0, #f9ffd9 200px, #ffe2fd 290px, #ffe2fd 302px);
 }
 
 @media (max-width: 600px) {
   body {
-    border: blue 20px dotted;
+    border-left: blue 20px dotted;
+    border-right: blue 20px dotted;
   }
 }
 
 #header-and-main-wrapper {
-  border-right: lightcoral 30px dotted;
-  border-left: red 30px solid;
+  border-right: lightcoral 20px solid;
+  border-left: red 20px dotted;
 }
 
 @media (max-width: 600px) {
   #header-and-main-wrapper {
-    border-right: lightcoral 8px dotted;
-    border-left: red 10px solid;
+    border-right: lightcoral 8px solid;
+    border-right: lightcoral 20px solid;
+    border-left: red 20px dotted;
   }
 }
 
 #header {
-  margin: 0 auto;
-  max-width: 1200px;
+  margin: 0 20px;
   padding-top: 30px;
+  height: 1000px;
+  background-image: url("../image/chickencurry.JPG");
+  background-size: cover;
 }
 
 #header .nav-menu {
@@ -95,7 +100,7 @@ body {
   }
 }
 
-#header .logo-wrapper {
+#header #shop-title .logo-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,28 +114,29 @@ body {
 }
 
 @media (max-width: 600px) {
-  #header .logo-wrapper {
+  #header #shop-title .logo-wrapper {
     padding: 10px;
   }
 }
 
-#header .logo-wrapper .shop-info h1 {
+#header #shop-title .logo-wrapper .shop-info h1 {
   font-size: 40px;
   font-style: italic;
+  font-family: "M PLUS Rounded 1c" ,sans-serif;
   letter-spacing: 5px;
   padding-top: 40px;
   padding-right: 40px;
 }
 
 @media (max-width: 600px) {
-  #header .logo-wrapper .shop-info h1 {
+  #header #shop-title .logo-wrapper .shop-info h1 {
     font-size: 20px;
     padding: 0;
     text-align: center;
   }
 }
 
-#header .logo-wrapper .shop-info h1 span {
+#header #shop-title .logo-wrapper .shop-info h1 span {
   font-size: 80px;
   font-weight: bold;
   text-shadow: -4px 3px 0 white, -8px 6px 0 gainsboro;
@@ -139,20 +145,20 @@ body {
 }
 
 @media (max-width: 600px) {
-  #header .logo-wrapper .shop-info h1 span {
+  #header #shop-title .logo-wrapper .shop-info h1 span {
     font-size: 45px;
     padding: 0;
   }
 }
 
-#header .logo-wrapper img {
+#header #shop-title .logo-wrapper img {
   width: 100px;
   height: 100px;
   border: 1px transparent solid;
   border-radius: 20px / 20px;
 }
 
-#header .title {
+#header #shop-title .title {
   font-size: 20px;
   font-weight: bold;
   font-family: serif;
@@ -161,7 +167,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  #header .title {
+  #header #shop-title .title {
     padding: 10px;
     font-size: 12px;
   }
@@ -178,11 +184,11 @@ body {
   border-right: 20px groove orange;
 }
 
-#main-content #main-img {
+#main-content #slide-img {
   margin: 30px 20px;
 }
 
-#main-content #main-img .slider li img {
+#main-content #slide-img .slider li img {
   height: 400px;
   width: 400px;
   margin: 0 auto;
@@ -191,7 +197,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  #main-content #main-img .slider li img {
+  #main-content #slide-img .slider li img {
     height: 100px;
     width: 100px;
   }
@@ -199,7 +205,7 @@ body {
 
 #main-content #news, #main-content #access {
   margin-top: 100px;
-  padding: 0 80px;
+  padding: 0 20px;
 }
 
 @media (max-width: 600px) {
@@ -211,8 +217,9 @@ body {
 
 #main-content #news h2, #main-content #access h2 {
   font-size: 35px;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
   border-bottom: solid 1px;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -222,11 +229,13 @@ body {
 }
 
 #main-content #news ul {
-  padding: 10px;
+  padding: 30px;
+  text-align: center;
 }
 
 #main-content #news ul li {
   font-size: 20px;
+  font-family: "M PLUS Rounded 1c" ,sans-serif;
   line-height: 30px;
 }
 
@@ -238,7 +247,7 @@ body {
 }
 
 #main-content .googlemap {
-  padding: 50px;
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -249,7 +258,7 @@ body {
 }
 
 #main-content .googlemap iframe {
-  width: 1000px;
+  width: 1200px;
   height: 600px;
 }
 

@@ -5,7 +5,8 @@ html {
     font-size: 100%;
 }
 body {
-    font-family: "M PLUS Rounded 1c" ,sans-serif;
+    // font-family: "M PLUS Rounded 1c" ,sans-serif;
+    font-family: serif;
     color: black;    
 }
 a {
@@ -27,29 +28,34 @@ ul {
 // }
 
 body {
-    border: blue 47px dotted;
+    border-left: blue 47px dotted;
+    border-right: blue 47px dotted;
     @media (max-width: 600px) {
-        border: blue 20px dotted;
+        border-left: blue 20px dotted;
+        border-right: blue 20px dotted;
     }
     background: repeating-linear-gradient(
         -42deg,#f9ffd9 0,#f9ffd9 200px,#ffe2fd 290px, #ffe2fd 302px,
     );
 }
 #header-and-main-wrapper {
-    border-right: lightcoral 30px dotted;
-    border-left: red 30px solid;
+    border-right: lightcoral 20px solid;
+    border-left: red 20px dotted;
     @media (max-width: 600px) {
-        border-right: lightcoral 8px dotted;
-        border-left: red 10px solid;
+        border-right: lightcoral 8px solid;
+    border-right: lightcoral 20px solid;
+    border-left: red 20px dotted;
     }
-
 }
 
 // header
 #header {
-    margin: 0 auto;
-    max-width: 1200px;
+    margin: 0 20px;
+    // max-width: 1200px;
     padding-top: 30px;
+    height: 1000px;
+    background-image: url("../image/chickencurry.JPG");
+    background-size: cover;
 
     .nav-menu {
         display: flex;
@@ -80,67 +86,71 @@ body {
 
         }
     }
-    .logo-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        padding: 30px 10px 30px 10px;
-        @media (max-width: 600px) {
-            padding: 10px;
-        }
+    #shop-title {
+        .logo-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 30px 10px 30px 10px;
+            @media (max-width: 600px) {
+                padding: 10px;
+            }
 
-        
-        .shop-info {
             
-            h1 {
-                font-size: 40px;
-                font-style: italic;
-                letter-spacing: 5px;
-                padding-top: 40px;
-                padding-right: 40px;
-                @media (max-width: 600px) {
-                    font-size: 20px;
-                    padding: 0;
-                    text-align: center;
-                }
-
+            .shop-info {
                 
-                span {
-                    font-size: 80px;
-                    font-weight: bold;
-                    text-shadow: -4px 3px 0 white, -8px 6px 0 gainsboro;
-                    color: red;
-                    padding: 0 10px 10px 0px;
+                h1 {
+                    font-size: 40px;
+                    font-style: italic;
+                    font-family: "M PLUS Rounded 1c" ,sans-serif;
+                    letter-spacing: 5px;
+                    padding-top: 40px;
+                    padding-right: 40px;
                     @media (max-width: 600px) {
-                        font-size: 45px;
+                        font-size: 20px;
                         padding: 0;
+                        text-align: center;
                     }
 
+                    
+                    span {
+                        font-size: 80px;
+                        font-weight: bold;
+                        text-shadow: -4px 3px 0 white, -8px 6px 0 gainsboro;
+                        color: red;
+                        padding: 0 10px 10px 0px;
+                        @media (max-width: 600px) {
+                            font-size: 45px;
+                            padding: 0;
+                        }
+
+                    }
                 }
             }
+            img {
+                width: 100px; 
+                height: 100px;
+                border: 1px transparent solid;
+                border-radius: 20px / 20px;
+            }
         }
-        img {
-            width: 100px; 
-            height: 100px;
-            border: 1px transparent solid;
-            border-radius: 20px / 20px;
+        .title {
+            font: {
+            size: 20px;
+            weight: bold;
+            family: serif;
+            ;
+            }
+            text-align: center;
+            padding: 10px 20px;
+            @media (max-width: 600px) {
+                padding: 10px;
+                font-size: 12px;
+            }
         }
     }
 
 
-    .title {
-        font: {
-        size: 20px;
-        weight: bold;
-        family: serif;
-        }
-        text-align: center;
-        padding: 10px 20px;
-        @media (max-width: 600px) {
-            padding: 10px;
-            font-size: 12px;
-        }
-    }
 
 }
 
@@ -157,12 +167,10 @@ body {
     }
     
     // slider
-    #main-img {
+    #slide-img {
         margin: 30px 20px;
 
         .slider li img { 
-            // border: 1px inherit solid;
-            // border-radius: 5%;
             height: 400px;
             width: 400px;
             margin: 0 auto;
@@ -179,7 +187,7 @@ body {
     // News
     #news, #access {
         margin-top: 100px;
-        padding: 0 80px; 
+        padding: 0 20px; 
         @media (max-width: 600px) {
             margin: 0 auto;
             padding: 12px;
@@ -187,8 +195,9 @@ body {
 
         h2 {
             font-size: 35px;
-            padding-bottom: 5px;
+            padding-bottom: 2px;
             border-bottom: solid 1px;
+            text-align: center;
             @media (max-width: 600px) {
                 font-size: 25px;
             }
@@ -196,9 +205,11 @@ body {
         }
     }
     #news ul {
-            padding: 10px;
+        padding: 30px;
+        text-align: center;
             li {
             font-size: 20px;
+            font-family: "M PLUS Rounded 1c" ,sans-serif;
             line-height: 30px;
             @media (max-width: 600px) {
                 font-size: 15px;
@@ -207,16 +218,17 @@ body {
 
             }
         }
+
     // Access
     .googlemap {
-        padding: 50px;
+        padding: 50px 0;
         text-align: center;
         @media (max-width: 600px) {
             padding: 10px;
         }
 
         iframe {
-            width: 1000px;
+            width: 1200px;
             height: 600px;
             @media (max-width: 600px) {
                 width: 250px;
